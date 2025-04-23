@@ -15,15 +15,15 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
 ## 🧱 Architecture Diagram
 
-url-shortener/
-├── lambda/
-│   ├── create_short_url.py
-│   └── redirect_handler.py
-├── templates/
-│   └── template.yaml
-├── ui/
-│   └── index.html (optional S3 hosted frontend)
-├── README.md
+    url-shortener/
+    ├── lambda/
+    │   ├── create_short_url.py
+    │   └── redirect_handler.py
+    ├── templates/
+    │    └── template.yaml
+    ├── ui/
+    │   └── index.html (optional S3 hosted frontend)
+    ├── README.md
 
 
 
