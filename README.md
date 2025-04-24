@@ -65,5 +65,8 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
    ```bash
    git clone https://github.com/Juniorklb/aws-serverless-url-shortener.git
    cd aws-serverless-url-shortener
+## Project Structure
 
+- Set up DynamoDB table
+- Create Lambda functions
 
