@@ -73,5 +73,6 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
        shorten_url: Generates a short URL and stores mapping
        redirect_url: Redirects short URL to the original URL
 
-
+- Connect Lambda to API Gateway
+- Optional Frontend (HTML + JS on S3)
 
