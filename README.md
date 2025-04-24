@@ -69,4 +69,9 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
 - Set up DynamoDB table
 - Create Lambda functions
+  
+       shorten_url: Generates a short URL and stores mapping
+       redirect_url: Redirects short URL to the original URL
+
+
 
