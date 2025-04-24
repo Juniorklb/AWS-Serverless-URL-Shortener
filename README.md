@@ -76,3 +76,16 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 - Connect Lambda to API Gateway
 - Optional Frontend (HTML + JS on S3)
 
+  ## step 1
+
+ 1.  Go to DynamoDB in AWS Console.
+
+ 2.  Click “Create table.”
+
+ 3.  Enter:
+
+    Table name: UrlShortener
+
+    Partition key: shortId (String)
+   
+4. Leave the rest as default and click Create table.
