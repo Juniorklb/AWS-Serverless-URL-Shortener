@@ -118,7 +118,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
   ![image_alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/fc7b27baffe8cae13b97d777064e639c8ce5bd32/Images/Lambda%202.PNG)
   
-  3. Add Environment Variable
+  ## Step 3 Add Environment Variable
       
      Scroll to "Environment variables."
 
@@ -127,6 +127,49 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
     Value: UrlShortener
 
   Click Save
+
+  ## Step 4 Replace the default Lambda code
+
+In the code editor, paste this full code:
+
+    import json
+    import boto3
+    import os
+    import string
+    import random
+
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table(os.environ['TABLE_NAME'])
+
+    def generate_short_id(length=6):
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
+
+    def lambda_handler(event, context):
+    body = json.loads(event['body'])
+    long_url = body.get('longUrl')
+
+    if not long_url:
+        return {
+            'statusCode': 400,
+            'body': json.dumps({'message': 'Missing longUrl'})
+        }
+
+    short_id = generate_short_id()
+    
+    table.put_item(
+        Item={
+            'shortId': short_id,
+            'longUrl': long_url
+        }
+    )
+
+    short_url = f"https://yourdomain.com/{short_id}"  # Replace with actual domain or API Gateway URL
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'shortUrl': short_url})
+    }
+Click Deploy
 
 </b>
 <h2>👥 Connect with me:</h2>
@@ -140,7 +183,6 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
   <img  src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" height="30" width="40"/>
 </a>
 </p>
-
 
 
 [linkedin]: https://linkedin.com/in/Juniorkalomba
