@@ -189,7 +189,7 @@ Resources: Choose your table: arn:aws:dynamodb:...:table/UrlShortener
 
 Click Review Policy, give it a name like DynamoDBPutItemPolicy, then Create policy
 
-## Connect Lambda to API Gateway
+## 6 Connect Lambda to API Gateway
 
 ### Steps Using AWS Console
  1. Go to API Gateway
@@ -226,6 +226,58 @@ Click Review Policy, give it a name like DynamoDBPutItemPolicy, then Create poli
         "longUrl": "https://www.example.com"
         }
 
+   Expected Response:  
+
+       {
+       "shortUrl": "https://yourdomain.com/abc123"
+       }
+
+## 7 Create the redirect_url Lambda function
+
+   Receives a short URL ID via the path (like /abc123)
+   
+   Looks up the corresponding long URL in DynamoDB
+   
+   Redirects the user to that long URL
+
+### Sample Lambda Function (redirect_url)
+
+ How to Set It Up in AWS Console
+ Go to Lambda
+
+ Click Create function
+
+    Name: redirect_url
+
+    Runtime: Python 3.9 (or higher)
+
+ Create a new role or use an existing one
+
+ Set environment variable
+
+    Key: TABLE_NAME
+
+    Value: UrlShortener
+
+ Paste and deploy the function code above
+
+ Update IAM role
+
+    Add dynamodb:GetItem permission (similar to shorten_url step)
+
+##   Connect to API Gateway 
+
+  Go back to API Gateway
+
+  Add a new route:
+
+    Method: GET
+
+    Path: /{shortId} ← this is dynamic
+
+Integrate it with the redirect_url Lambda function
+
+Deploy to your stage 
 </b>
 <h2>👥 Connect with me:</h2>
 
