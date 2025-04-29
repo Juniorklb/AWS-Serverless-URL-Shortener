@@ -116,7 +116,8 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
 Choose “Create a new role with basic Lambda permissions.”   
 
-
+  ![image_alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/fc7b27baffe8cae13b97d777064e639c8ce5bd32/Images/Lambda%202.PNG)
+  
   3. Add Environment Variable
       
      Scroll to "Environment variables."
