@@ -88,7 +88,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
     Partition key: shortId (String)
 
-    
+![image alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/1e8ef7ea1b3abe3a359abc14d028cc503eef5fb0/Images/Dynamobd.PNG)
    
 4. Leave the rest as default and click Create table.
 
