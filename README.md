@@ -87,6 +87,8 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
     Table name: UrlShortener
 
     Partition key: shortId (String)
+
+    
    
 4. Leave the rest as default and click Create table.
 
