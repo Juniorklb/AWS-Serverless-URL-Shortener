@@ -114,7 +114,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
    
       Execution role:
 
-Choose “Create a new role with basic Lambda permissions.”   
+      Choose “Create a new role with basic Lambda permissions.”   
 
   ![image_alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/fc7b27baffe8cae13b97d777064e639c8ce5bd32/Images/Lambda%202.PNG)
   
@@ -122,13 +122,11 @@ Choose “Create a new role with basic Lambda permissions.”
       
      Scroll to "Environment variables."
 
- Add:
-
+  Add:
     Key: TABLE_NAME
-
     Value: UrlShortener
 
- Click Save
+  Click Save
 
 </b>
 <h2>👥 Connect with me:</h2>
