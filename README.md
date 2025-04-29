@@ -130,4 +130,20 @@ Choose “Create a new role with basic Lambda permissions.”
 
  Click Save
 
+ <p align="left">
+  <a href="https://www.linkedin.com/in/junior-kalomba-10002a18a/" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="junior-kalomba-10002a18a" height="30" width="40"/>  
+    
+  </a>
+  <a href="mailto:jrkalomba@gmail.com" target="_blank">
+  <img  src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" height="30" width="40"/>
+</a>
+</p>
+
+
+
+[linkedin]: https://linkedin.com/in/Juniorkalomba
+
+**🔗 Feel free to contribute or suggest improvements!**
+
    
