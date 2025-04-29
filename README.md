@@ -189,6 +189,33 @@ Resources: Choose your table: arn:aws:dynamodb:...:table/UrlShortener
 
 Click Review Policy, give it a name like DynamoDBPutItemPolicy, then Create policy
 
+## Connect Lambda to API Gateway
+
+### Steps Using AWS Console
+ 1. Go to API Gateway
+ In the AWS Console, search for API Gateway
+ Click “Create API”
+ 2. Choose API Type
+ Select HTTP API (recommended)
+ Click “Next”
+ 3. Add Lambda Integration
+ Select “Add integration”
+ Choose Lambda function
+ Find and select your function: shorten_url
+ Click “Next”
+ 4. Configure Route
+ Method: POST
+ Path: /shorten
+ Click “Next”
+ 5. Deployment
+ Create a new stage, dev
+ Click “Create”
+ API Gateway will generate a public URL:
+ bash
+
+
+         https://abc123xyz.execute-api.us-east-1.amazonaws.com/shorten
+
 </b>
 <h2>👥 Connect with me:</h2>
 
