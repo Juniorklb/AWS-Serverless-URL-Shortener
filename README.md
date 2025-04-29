@@ -91,6 +91,8 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 ![image alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/1e8ef7ea1b3abe3a359abc14d028cc503eef5fb0/Images/Dynamobd.PNG)
    
 4. Leave the rest as default and click Create table.
+   
+![image alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/94e246deabe545de034cdf84a2db44c573bf74fa/Images/Dynamobd%202.PNG)
 
    ## Step 2 create Lambda Function – Shorten URL
 
