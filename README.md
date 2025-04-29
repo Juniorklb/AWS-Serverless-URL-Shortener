@@ -109,7 +109,9 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
       Function name: shorten_url
 
       Runtime: Python 3.9, 3.10
-
+      
+   ![image_alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/698309afbc95e6dec142975d620055734f8d5442/Images/Lambda%201.PNG)
+   
       Execution role:
 
 Choose “Create a new role with basic Lambda permissions.”   
