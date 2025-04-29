@@ -130,7 +130,10 @@ Choose “Create a new role with basic Lambda permissions.”
 
  Click Save
 
- <p align="left">
+</b>
+<h2>👥 Connect with me:</h2>
+
+<p align="left">
   <a href="https://www.linkedin.com/in/junior-kalomba-10002a18a/" target="_blank">
     <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="junior-kalomba-10002a18a" height="30" width="40"/>  
     
@@ -145,5 +148,6 @@ Choose “Create a new role with basic Lambda permissions.”
 [linkedin]: https://linkedin.com/in/Juniorkalomba
 
 **🔗 Feel free to contribute or suggest improvements!**
+
 
    
