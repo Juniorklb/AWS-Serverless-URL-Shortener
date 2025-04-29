@@ -214,7 +214,17 @@ Click Review Policy, give it a name like DynamoDBPutItemPolicy, then Create poli
  bash
 
 
-         https://abc123xyz.execute-api.us-east-1.amazonaws.com/shorten
+        https://abc123xyz.execute-api.us-east-1.amazonaws.com/shorten
+    
+   Test the API
+   You can test it using Postman or curl.
+ 
+        POST https://your-api-id.execute-api.region.amazonaws.com/shorten
+        Content-Type: application/json
+
+        {
+        "longUrl": "https://www.example.com"
+        }
 
 </b>
 <h2>👥 Connect with me:</h2>
