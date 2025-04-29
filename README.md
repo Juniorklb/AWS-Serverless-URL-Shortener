@@ -76,7 +76,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 - Connect Lambda to API Gateway
 - Optional Frontend (HTML + JS on S3)
 
-  ## Step 1 Create table with DynamodDB
+  ## 1 Create table with DynamodDB
 
  1.  Go to DynamoDB in AWS Console.
 
@@ -94,7 +94,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
    
 ![image alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/94e246deabe545de034cdf84a2db44c573bf74fa/Images/Dynamobd%202.PNG)
 
-   ## Step 2 create Lambda Function – Shorten URL
+   ## 2 create Lambda Function – Shorten URL
 
    1. Go to AWS Lambda
       
@@ -118,7 +118,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
   ![image_alt](https://github.com/Juniorklb/AWS-Serverless-URL-Shortener/blob/fc7b27baffe8cae13b97d777064e639c8ce5bd32/Images/Lambda%202.PNG)
   
-  ## Step 3 Add Environment Variable
+  ## 3 Add Environment Variable
       
      Scroll to "Environment variables."
 
@@ -128,7 +128,7 @@ This project is an **AWS serverless URL shortener** built on AWS. It allows user
 
   Click Save
 
-  ## Step 4 Replace the default Lambda code
+  ## 4 Replace the default Lambda code
 
 In the code editor, paste this full code:
 
@@ -170,6 +170,24 @@ In the code editor, paste this full code:
         'body': json.dumps({'shortUrl': short_url})
     }
 Click Deploy
+
+## 5 Update the IAM Role to Allow DynamoDB Access
+
+In the Lambda page, go to Configuration → Permissions
+
+Click the Role name under "Execution Role"
+
+In the IAM console:
+
+Click Add permissions → Create inline policy
+
+Choose Service: DynamoDB
+
+Actions: PutItem
+
+Resources: Choose your table: arn:aws:dynamodb:...:table/UrlShortener
+
+Click Review Policy, give it a name like DynamoDBPutItemPolicy, then Create policy
 
 </b>
 <h2>👥 Connect with me:</h2>
